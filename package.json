@@ -10,6 +10,13 @@
     "trpc-api-export/dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonwen001/trpc-api-boilerplate.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "trpc-api-export": "tsup --config trpc-api-export/builder/tsup.config.ts && npm run format-fix",
     "prepare": "husky",
